@@ -13,23 +13,23 @@ function getBMI() {
 		console.log(BMI);
 	} else if(BMI <= 18.4) {
 		outputBMI.innerHTML = BMI;
-		outputMeasure.innerHTML = 'underweight';
+		outputMeasure.innerHTML = 'Underweight';
 		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 30) {
 		outputBMI.innerHTML = BMI;
-		outputMeasure.innerHTML = 'normal';
+		outputMeasure.innerHTML = 'Normal';
 		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 25) {
 		outputBMI.innerHTML = BMI;
 		outputBMI.style.display = 'block';
-		outputMeasure.innerHTML = 'overweight';
+		outputMeasure.innerHTML = 'Overweight';
 		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 18.5) {
 		outputBMI.innerHTML = BMI;
-		outputMeasure.innerHTML = 'obese';
+		outputMeasure.innerHTML = 'Obese';
 		showOutput();
 		console.log(BMI);
 	} else {
