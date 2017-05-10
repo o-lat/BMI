@@ -1,5 +1,14 @@
 // JS File
 
+function e() {
+	document.getElementById('calculate').addEventListener("click", getBMI);
+	document.getElementById('retry').addEventListener("click", reload);
+}
+
+function reload() {
+	location.reload();
+}
+
 function getBMI() {
 	var weight = document.getElementById("textbox1").value;
 	var height = document.getElementById("textbox2").value;

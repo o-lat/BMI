@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body onload="e()">
 		<center>
 			<div class="card_view">
 				<header>
@@ -18,7 +18,7 @@
 					<div class="input_cont">
 						<span>Height (m): </span><input type="number" id="textbox2" value="0"><br>
 					</div>
-					<button class="button" onclick="getBMI()"><span>Calculate</span></button><br>
+					<button class="button" id="calculate"><span>Calculate</span></button><br>
 					<div class="output_cont" id="output">
                          <div class="bmitable">
                             <table>
@@ -47,7 +47,7 @@
 						<p id="bmi_text">Your BMI is: </p><p class="output" id="output_bmi"></p>
 						<p id="measure_text">You are: </p><p class="output_measure" id="output_measure"></p>
 						<div class="seperator">
-							<button class="button" value="Reload Page" onClick="location.reload()">Try Again</button>
+							<button class="button" value="Reload Page" id="retry">Try Again</button>
 						</div>
                         <p>If you are worried about your results click <a href="https://www.cdc.gov/healthyweight/assessing/bmi/">here</a> for more info</p>
 					</div>
