@@ -17,32 +17,33 @@ function getBMI() {
 	var bmiText = document.getElementById('bmi_text');
 	var measureText = document.getElementById('measure_text');
 	var BMI = (weight / (height * height));
+	var rounded = Math.round(BMI);
 	if (weight == '0' || height == '0') {
 		alert('Please enter a valid BMI.');
 		console.log(BMI);
-	} else if(BMI <= 18.4) {
-		outputBMI.innerHTML = Math.round(BMI);
+	} else if(rounded <= 18.4) {
+		outputBMI.innerHTML = rounded;
 		outputMeasure.innerHTML = 'Underweight';
 		showOutput();
 		console.log(BMI);
-	} else if(BMI <= 24.9) {
-		outputBMI.innerHTML = Math.round(BMI);
+	} else if(rounded <= 24.9) {
+		outputBMI.innerHTML = rounded;
 		outputMeasure.innerHTML = 'Normal';
 		showOutput();
 		console.log(BMI);
-	} else if(BMI <= 29.9) {
-		outputBMI.innerHTML = Math.round(BMI);
+	} else if(rounded <= 29.9) {
+		outputBMI.innerHTML = rounded;
 		outputBMI.style.display = 'block';
 		outputMeasure.innerHTML = 'Overweight';
 		showOutput();
 		console.log(BMI);
-	} else if(BMI >= 30) {
-		outputBMI.innerHTML = Math.round(BMI);
+	} else if(rounded >= 30) {
+		outputBMI.innerHTML = rounded;
 		outputMeasure.innerHTML = 'Obese';
 		showOutput();
 		console.log(BMI);
 	} else {
-		outputBMI.innerHTML = Math.round(BMI);
+		outputBMI.innerHTML = rounded;
 		outputMeasure.innerHTML = 'Error';
 		showOutput();
 		console.log(BMI);
