@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<!-- header -->
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
-	<body>
-		<div id="wrapper">
-			<header>
-				<h1>BMI Calculator</h1>
-			</header>
-			<h2>Welcome to the BMI Calculator</h2>
-			<!-- Weight Input -->
-			<span>Weight(KG): </span><input type="number" id="textbox1" value="0">
-			<br>
-			<br>
-			<!-- Height Input -->
-			<span> Height(m): </span><input type="number" id="textbox2" value="0">
-			<br>
-			<br>
-			<p>Click to calculate your BMI.</p>
-			<!-- Calculate Button -->
-			<button class="button" onclick="getBMI()"><span>Calculate</span></button>
-			<br>
-			<br>
-			<span class="output_text" id="bmi_text">Your BMI is: </span><span class="output" id="output_bmi"></span>
-			<br>
-			<br>
-			<span class="output_text" id="measure_text">You are: </span><span class="output_measure" id="output_measure"></span>
-		</div>
+	<body onload="e()">
+		<center>
+			<div class="card_view">
+				<header>
+					<h1>BMI Calculator</h1>
+				</header><br>
+				<div class="content">
+					<h2>Welcome to the BMI Calculator</h2>
+					<div class="input_cont">
+						<span class="tag">Weight (kg): </span><input type="number" id="textbox1" value="0"><br>
+					</div>
+					<div class="input_cont">
+						<span>Height (m): </span><input type="number" id="textbox2" value="0"><br>
+					</div>
+					<button class="button" id="calculate"><span>Calculate</span></button><br>
+					<div class="output_cont" id="output">
+                         <div class="bmitable">
+                            <table>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Measure</th> 
+                            </tr>
+                            <tr>
+                                <td>0 - 18.5</td>
+                                <td>Underweight</td>  
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Normal</td>    
+                            </tr>
+                            <tr>
+                                <td>25-29.9</td>
+                                <td>Overweight</td>    
+                            </tr>
+                            <tr>
+                                <td>30+</td>
+                                <td>Obese</td>   
+                            </tr>
+                        </table>
+                        </div><br>
+						<p id="bmi_text">Your BMI is: </p><p class="output" id="output_bmi"></p>
+						<p id="measure_text">You are: </p><p class="output_measure" id="output_measure"></p>
+						<div class="seperator">
+							<button class="button" value="Reload Page" id="retry">Try Again</button>
+						</div>
+                        <p>If you are worried about your results click <a href="https://www.cdc.gov/healthyweight/assessing/bmi/">here</a> for more info</p>
+					</div>
+				</div>
+			</div>
+		</center>
 	</body>
 </html>
