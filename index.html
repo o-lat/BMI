@@ -1,12 +1,37 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>BMI Calc - Test</title>
-    <script src="script.js" type="text/javascript"></script>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <input id="textbox1" value="0" type="number" placeholder="Enter your weight..." />
-    <input id="textbox2" value="0" type="number" placeholder="Enter your height..." />
-    <button id="submit" onclick="getBMI()">Check BMI</button>
-  </body>
+    <--! header -->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+<body>
+<div id="wrapper">
+    
+<header>
+    <h1>BMI Calculator</h1>
+</header>
+    
+<h2>Welcome to the BMI Calculator</h2>
+
+    <--! Weight Input -->
+<span style="margin-left:660px;">Weight(KG): </span><input type="number" id="textbox1" value="0">
+    <br>
+    <br>
+        <--! Height Input -->
+<span style="margin-left:670px;"> Height(m): </span><input type="number" id="textbox2" value="0">
+<br>
+<br>
+<p style="margin-left:692px;">Click to calculate your BMI.</p>
+
+        <--! Calculate Button -->
+<button class="button" onclick="getBMI()"><span>Calculate</span></button>
+    <br>
+    <br>
+<span style="margin-left:692px; display:none;" id="bmi_text">Your BMI is: </span><span id="output_bmi"></span>
+    <br>
+    <br>
+<span style="margin-left:692px; display:none;" id="measure_text"> You are: </span><span id="output_measure"></span>
+</div>
+</body>
 </html>
