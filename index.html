@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<!-- header -->
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div id="wrapper">
-			<header>
-				<h1>BMI Calculator</h1>
-			</header>
-			<h2>Welcome to the BMI Calculator</h2>
-			<!-- Weight Input -->
-			<span>Weight(KG): </span><input type="number" id="textbox1" value="0">
-			<br>
-			<br>
-			<!-- Height Input -->
-			<span> Height(m): </span><input type="number" id="textbox2" value="0">
-			<br>
-			<br>
-			<p>Click to calculate your BMI.</p>
-			<!-- Calculate Button -->
-			<button class="button" onclick="getBMI()"><span>Calculate</span></button>
-			<br>
-			<br>
-			<span class="output_text" id="bmi_text">Your BMI is: </span><span class="output" id="output_bmi"></span>
-			<br>
-			<br>
-			<span class="output_text" id="measure_text">You are: </span><span class="output_measure" id="output_measure"></span>
-		</div>
+		<center>
+			<div class="card_view">
+				<header>
+					<h1>BMI Calculator</h1>
+				</header><br>
+				<div class="content">
+					<h2>Welcome to the BMI Calculator</h2>
+					<div class="input_cont">
+						<span class="tag">Weight (kg): </span><input type="number" id="textbox1" value="0"><br>
+					</div>
+					<div class="input_cont">
+						<span>Height (m): </span><input type="number" id="textbox2" value="0"><br>
+					</div>
+					<button class="button" onclick="getBMI()"><span>Calculate</span></button><br>
+					<div class="output_cont" id="output">
+						<span id="bmi_text">Your BMI is: </span><span class="output" id="output_bmi"></span><br>
+						<span id="measure_text">You are: </span><span class="output_measure" id="output_measure"></span>
+					</div>
+				</div>
+			</div>
+		</center>
 	</body>
 </html>
