@@ -1,15 +1,16 @@
 #wrapper {
-  width: 70%;     /* specify a width! */
-  margin: 0 auto; /* center */
-}   
-
+    width: 70%;
+    /* specify a width! */
+    
+    margin: 0 auto;
+    /* center */
+}
 h1 {
-        text-align:center;
-    }
-
+    text-align: center;
+}
 h2 {
-        text-align:center;
-    }
+    text-align: center;
+}
 header {
     padding: 1em;
     color: white;
@@ -17,46 +18,41 @@ header {
     clear: left;
     text-align: center;
 }
-
 input {
-    height:20px;
+    height: 20px;
 }
-html *
-{
-   font-family: Arial !important;
+html * {
+    font-family: Arial !important;
 }
 .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  padding: 15px;
-  width: 255px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-margin-left: 667px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 255px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 667px;
 }
-
 .button {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
-
 .button {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
-
 .button:hover {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
