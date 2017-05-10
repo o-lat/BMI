@@ -1,1 +1,71 @@
---
+body {
+	margin:0;
+	font-family:Arial,sans-serif;
+}
+#wrapper {
+    width: 100%;
+    /* specify a width! */
+	text-align:center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+input {
+    height: 20px;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 255px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button:after {
+    content: ' \00bb';
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover {
+    padding-right: 25px;
+}
+.button:hover:after {
+    opacity: 1;
+    right: 0;
+}
+.output {
+	font-weight:bold;
+	font-size:34px;
+	display:none;
+}
+.output_measure {
+	font-weight:normal;
+	font-size:24px;
+	display:none;
+}
+.output_text {
+	display:none;
+}

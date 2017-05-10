@@ -1,27 +1,48 @@
-// BMI JS File
+// JS File
 
 function getBMI() {
-    var weight = parseInt(document.getElementById("textbox1").value);
-    var height = parseInt(document.getElementById("textbox2").value);
-    var BMI = (weight / (height * height));
+	var weight = parseInt(document.getElementById("textbox1").value);
+	var height = parseInt(document.getElementById("textbox2").value);
+	var outputBMI = document.getElementById('output_bmi');
+	var outputMeasure = document.getElementById('output_measure');
+	var bmiText = document.getElementById('bmi_text');
+	var measureText = document.getElementById('measure_text');
+	var BMI = (weight / (height * height));
 	if (weight == '0' || height == '0') {
 		alert('Please enter a valid BMI.');
 		console.log(BMI);
 	} else if(BMI <= 18.4) {
-		alert('You are under weight.');
+		outputBMI.innerHTML = BMI;
+		outputMeasure.innerHTML = 'underweight';
+		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 30) {
-		alert('Your weight is normal.');
+		outputBMI.innerHTML = BMI;
+		outputMeasure.innerHTML = 'normal';
+		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 25) {
-		alert('You are overweight.');
+		outputBMI.innerHTML = BMI;
+		outputBMI.style.display = 'block';
+		outputMeasure.innerHTML = 'overweight';
+		showOutput();
 		console.log(BMI);
 	} else if(BMI >= 18.5) {
-		alert('You are obese.');
+		outputBMI.innerHTML = BMI;
+		outputMeasure.innerHTML = 'obese';
+		showOutput();
 		console.log(BMI);
 	} else {
-		alert('Error.')
+		outputBMI.innerHTML = BMI;
+		outputMeasure.innerHTML = 'Error';
+		showOutput();
 		console.log(BMI);
 	}
-    // alert('Your BMI is ', BMI);
+}
+
+function showOutput() {
+	document.getElementById('bmi_text').style.display = 'block';
+	document.getElementById('measure_text').style.display = 'block';
+	document.getElementById('output_bmi').style.display = 'block';
+	document.getElementById('output_measure').style.display = 'block';
 }
