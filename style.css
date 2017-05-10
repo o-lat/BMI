@@ -91,6 +91,9 @@ input:focus {
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 	box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
+p {
+	margin:5px;
+}
 .content {
 	padding:10px;
 }
@@ -121,10 +124,12 @@ th {
     color:white;
     background-color: black;
 }
-
 .bmitable table {
-  float: left;
-  width: 250px;
-  height: 150px;
-margin-top:-4px;
+	float: left;
+	width: 250px;
+	height: 150px;
+	margin-top:-4px;
+}
+.seperator {
+	margin-top:60px;
 }
