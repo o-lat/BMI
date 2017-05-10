@@ -20,8 +20,40 @@
 					</div>
 					<button class="button" onclick="getBMI()"><span>Calculate</span></button><br>
 					<div class="output_cont" id="output">
-						<span id="bmi_text">Your BMI is: </span><span class="output" id="output_bmi"></span><br>
-						<span id="measure_text">You are: </span><span class="output_measure" id="output_measure"></span>
+                         <div class="bmitable">
+                            <table>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Measure</th> 
+                            </tr>
+                            <tr>
+                                <td>0 - 18.5</td>
+                                <td>Underweight</td>  
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Normal</td>    
+                            </tr>
+                            <tr>
+                                <td>25-29.9</td>
+                                <td>Overweight</td>    
+                            </tr>
+                            <tr>
+                                <td>30+</td>
+                                <td>Obese</td>   
+                            </tr>
+                        </table>
+                        </div>
+						<span id="bmi_text">Your BMI is: </span><br><br><span class="output" id="output_bmi"></span><br>
+                        <br>
+						<span id="measure_text">You are: </span><br><br><span class="output_measure" id="output_measure"></span>   
+                        <br>
+                        <br>
+                        <br>
+                        <button class="button" value="Reload Page" onClick="location.reload()"><span>Try Again</span></button>
+                        <br>
+                        <br>
+                        <span>If you are worried about your results click <a href="https://www.cdc.gov/healthyweight/assessing/bmi/">here</a> for more info</span>
 					</div>
 				</div>
 			</div>

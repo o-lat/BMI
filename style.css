@@ -102,3 +102,29 @@ input:focus {
 	margin-bottom:20px;
 	display:none;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    margin-left:100px;
+}
+
+td{
+    border: 1px solid grey;
+    text-align: left;
+    padding: 6px;
+}
+th {
+    border: 1px solid grey;
+    text-align: left;
+    padding: 6px;
+    color:white;
+    background-color: black;
+}
+
+.bmitable table {
+  float: left;
+  width: 250px;
+  height: 150px;
+margin-top:-4px;
+}
